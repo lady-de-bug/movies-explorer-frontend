@@ -8,11 +8,10 @@ function AboutMe() {
   return (
     <section className="about-me" id="about-me">
       <SectionTitle title="Студент" />
-      {/* <h2 className="techs__title section-title">Студент</h2> */}
       <div className="about-me__content">
         <div className="about-me__info">
           <h3 className="about-me__name">Елена</h3>
-          <p className="about-me__occupation">Фронтенд-разработчик, 44 года</p>
+          <p className="about-me__occupation">Фронтенд-разработчик, 24 года</p>
           <p className="about-me__description">
             Я родился и живу в Саратове, закончил факультет экономики СГУ. У
             меня есть жена и дочь. Я люблю слушать музыку, а ещё увлекаюсь

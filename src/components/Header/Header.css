@@ -1,0 +1,20 @@
+/* .header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  padding: 18px 70px;
+  background-color: #465dff;
+} */
+
+.header {
+  max-width: 1280px;
+  display: flex;
+  align-items: center;
+  padding: 18px 70px;
+  background-color: #465dff;
+  gap: 62px;
+}
+
+.header__logo-img {
+  display: block;
+}

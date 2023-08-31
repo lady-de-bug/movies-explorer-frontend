@@ -5,10 +5,12 @@ import AboutProject from '../AboutProject/AboutProject';
 import Techs from '../Techs/Techs';
 import AboutMe from '../AboutMe/AboutMe';
 import Footer from '../Footer/Footer';
+import Header from '../Header/Header';
 
-function Main() {
+function Main({isLoggedIn}) {
   return (
     <section className="main">
+      <Header isLoggedIn={isLoggedIn} />
       <Promo />
       <NavTab />
       <AboutProject />
