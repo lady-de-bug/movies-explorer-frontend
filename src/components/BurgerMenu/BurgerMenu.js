@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './MenuPopup.css';
+import './BurgerMenu.css';
 
-function MenuPopup() {
+function BurgerMenu({handleClose}) {
   return (
-    <div className="navigation__popup">
+    <div className="navigation__popup" /*onClick={handleClose}*/>
       <div className="navigation__popup-container">
-        <button className="navigation__popup-close-icon" type="button" />
+        <button className="navigation__popup-close-icon" type="button" onClick={handleClose}/>
         <ul className="navigation__list1">
           <li>
             <Link className="navigation__link" to="/">
@@ -35,4 +35,4 @@ function MenuPopup() {
   );
 }
 
-export default MenuPopup;
+export default BurgerMenu;
