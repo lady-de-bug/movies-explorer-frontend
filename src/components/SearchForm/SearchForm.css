@@ -1,6 +1,9 @@
 .search-form {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
-  padding: 60px 70px;
+  padding: 60px 70px 10px;
 }
 
 .search-form__form {
@@ -21,7 +24,7 @@ form:focus-within {
   flex-grow: 2;
   padding-left: 22px;
   background-color: transparent;
-
+  outline: none;
   border: none;
 }
 
@@ -36,4 +39,10 @@ form:focus-within {
   background-position: center;
   margin-right: 6px;
   border: none;
-}
+  cursor: pointer;
+  transition: opacity 0.3s linear 0.2s;
+  }
+
+  .search-form__button:hover {
+    opacity: 0.8;
+  }

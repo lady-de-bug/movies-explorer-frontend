@@ -1,5 +1,6 @@
 import React from 'react';
 import './SearchForm.css';
+import FilterCheckbox from '../FilterCheckBox/FilterCheckBox';
 
 function SearchForm() {
   return (
@@ -14,7 +15,7 @@ function SearchForm() {
 
         <button className="search-form__button" type="submit" />
       </form>
-      <div className="search-form__line"></div>
+      <FilterCheckbox />
     </section>
   );
 }
