@@ -1,20 +1,18 @@
 import React from 'react';
-import './Movies.css';
+import './SavedMovies.css';
 
 import SearchForm from '../SearchForm/SearchForm';
 import MoviesCardList from '../MoviesCardList/MoviesCardList';
-import ShowMore from '../ShowMore/ShowMore';
 import Footer from '../Footer/Footer';
 
-function Movies() {
+function SavedMovies() {
   return (
     <section classname="movies">
       <SearchForm />
       <MoviesCardList />
-      <ShowMore />
       <Footer />
     </section>
   );
 }
 
-export default Movies;
+export default SavedMovies;

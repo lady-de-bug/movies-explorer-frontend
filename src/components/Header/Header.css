@@ -8,14 +8,7 @@
   gap: 62px;
 }
 
-.header__logo-img {
-  display: block;
-  transition: opacity 0.3s linear 0.2s;
-}
 
-.header__logo-img:hover {
-  opacity: 0.7;
-}
 
 .header_white {
   background-color: #ffffff;

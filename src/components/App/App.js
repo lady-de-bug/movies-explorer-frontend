@@ -5,6 +5,7 @@ import Main from '../Main/Main';
 import Movies from '../Movies/Movies';
 import PageNotFound from '../PageNotFound/PageNotFound';
 import Header from '../Header/Header';
+import SavedMovies from '../SavedMovies/SavedMovies';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = React.useState(true);
@@ -29,9 +30,17 @@ function App() {
             </>
           }
         />
+        <Route
+          path="/saved-movies"
+          element={
+            <>
+              <Header isLoggedIn={isLoggedIn} />
+              <SavedMovies />
+            </>
+          }
+        />
         <Route path="/*" element={<PageNotFound />} />
-        {/* <Route path="/popup" element={<MenuPopup />} /> */}
-      </Routes>
+              </Routes>
     </div>
   );
 }

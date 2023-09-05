@@ -1,0 +1,19 @@
+.show-more {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 50px 70px 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.show-more__button {
+  background-color:  #F9F9F9;
+  ;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  font-style: 12px;
+  line-height: 14.52px;
+  padding: 11px 0  9px;
+}
