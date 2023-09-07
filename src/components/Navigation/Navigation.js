@@ -11,7 +11,6 @@ function Navigation({ isLoggedIn }) {
     setIsBurgerOpened(true);
   };
   const handleClose = () => {
-    
     setIsBurgerOpened(false);
   };
   const location = useLocation();
@@ -39,7 +38,14 @@ function Navigation({ isLoggedIn }) {
               </Link>
             </li>
             <li className="navigation__list-item">
-              <Link className="navigation__link" to="/saved-movies">
+              <Link
+                className={
+                  location.pathname === '/saved-movies'
+                    ? 'navigation__link navigation__link_active'
+                    : 'navigation__link'
+                }
+                to="/saved-movies"
+              >
                 Сохранённые фильмы
               </Link>
             </li>

@@ -6,6 +6,7 @@ import Movies from '../Movies/Movies';
 import PageNotFound from '../PageNotFound/PageNotFound';
 import Header from '../Header/Header';
 import SavedMovies from '../SavedMovies/SavedMovies';
+import Profile from '../Profile/Profile';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = React.useState(true);
@@ -36,6 +37,15 @@ function App() {
             <>
               <Header isLoggedIn={isLoggedIn} />
               <SavedMovies />
+            </>
+          }
+        />
+        <Route
+          path="/profile"
+          element={
+            <>
+              <Header isLoggedIn={isLoggedIn} />
+              <Profile />
             </>
           }
         />
