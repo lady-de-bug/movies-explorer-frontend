@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Navigation.css';
-import menu_icon from '../../images/icon__COLOR_icon-main.svg';
-import menu_icon_black from '../../images/icon__BLACK_icon-main .svg';
 import BurgerMenu from '../BurgerMenu/BurgerMenu';
 
 function Navigation({ isLoggedIn }) {
@@ -50,24 +48,23 @@ function Navigation({ isLoggedIn }) {
               </Link>
             </li>
           </ul>
-
           <Link to="/profile" className="navigation__profile-link">
             <button className="navigation__button" type="button">
               Аккаунт
             </button>
           </Link>
           <button
-            className="navigation__burger-menu-button"
+            className={
+              location.pathname === '/'
+                ? 'navigation__burger-button navigation__burger-button_type_white'
+                : 'navigation__burger-button navigation__burger-button_type_black'
+            }
             type="button"
             onClick={handleOpen}
           >
-            <img
-              className="navigation__burger-menu-icon"
-              src={location.pathname === '/' ? menu_icon : menu_icon_black}
-              alt="Попап меню"
-            />
+           
           </button>
-
+        
           {isBurgerOpened && <BurgerMenu handleClose={handleClose} />}
         </>
       ) : (

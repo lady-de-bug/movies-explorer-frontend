@@ -7,6 +7,7 @@ function MoviesCard() {
   const location = useLocation();
 
   return (
+  
     <article className="movies-card">
       <img className="movies-card__image" src={movie} alt="Фильм" />
       <div className="movies-card__mask_group">
@@ -17,10 +18,12 @@ function MoviesCard() {
         <button
           className={
             location.pathname === '/movies'
-              ? 'movies-card__button movies-card__button_active'
-              : 'movies-card__button movies-card__button_delete-icon'
+           ? 'movies-card__button movies-card__button_active'
+              // ? 'movies-card__button movies-card__button_type_default'
+              : 'movies-card__button movies-card__button_type_delete'
           }
           type="button"
+
         ></button>
       </div>
     </article>

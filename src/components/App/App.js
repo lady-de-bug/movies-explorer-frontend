@@ -11,7 +11,7 @@ import Register from '../Register/Register';
 
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = React.useState(false);
+  const [isLoggedIn, setIsLoggedIn] = React.useState(true);
   return (
     <div className="page">
       <Routes>
