@@ -7,9 +7,11 @@ import PageNotFound from '../PageNotFound/PageNotFound';
 import Header from '../Header/Header';
 import SavedMovies from '../SavedMovies/SavedMovies';
 import Profile from '../Profile/Profile';
+import Register from '../Register/Register';
+
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = React.useState(true);
+  const [isLoggedIn, setIsLoggedIn] = React.useState(false);
   return (
     <div className="page">
       <Routes>
@@ -49,6 +51,7 @@ function App() {
             </>
           }
         />
+        <Route path="/signup" element={<Register />} />
         <Route path="/*" element={<PageNotFound />} />
               </Routes>
     </div>

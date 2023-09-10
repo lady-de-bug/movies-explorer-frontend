@@ -64,10 +64,11 @@
   justify-content: flex-end;
   list-style: none;
   width: 100%;
-  gap: 26px;
+  gap: 30px;
 }
 
 .navigation__signup-button {
+  padding: 0;
   height: 32px;
   border: none;
   background-color: transparent;
@@ -125,5 +126,20 @@
 
   .navigation__burger-menu-button {
     display: flex;
+  }
+}
+
+@media (max-width: 450px) {
+  .navigation__auth-list {
+    gap: 14px;
+  }
+  .navigation__signup-button {
+    font-size: 10px;
+    height: 26px;
+  }
+  .navigation__signin-button {
+    width: 54px;
+    height: 26px;
+    font-size: 10px;
   }
 }

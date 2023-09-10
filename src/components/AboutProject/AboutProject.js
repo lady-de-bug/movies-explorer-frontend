@@ -30,8 +30,8 @@ function AboutProject() {
       <div className="about-project__timetable">
         <div className="about-project__back-duration">1 неделя</div>
         <div className="about-project__front-duration">4 недели</div>
-        <p className="about-project__back-text">Back-end</p>
-        <p className="about-project__front-text">Front-end</p>
+        <p className="about-project__text">Back-end</p>
+        <p className="about-project__text">Front-end</p>
       </div>
     </section>
   );

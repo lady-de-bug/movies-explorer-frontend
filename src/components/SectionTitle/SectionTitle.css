@@ -4,7 +4,15 @@
   font-weight: 400;
   font-size: 22px;
   line-height: 26.63px;
-  letter-spacing: -0.04em;
   border-bottom: 1px solid #000000;
   letter-spacing: -0.88px;
+}
+
+@media (max-width: 450px) {
+  .section-title {
+    padding-bottom: 28px;
+    font-size: 18px;
+    line-height: 21.78px;
+    letter-spacing: -0.72px;
+  }
 }

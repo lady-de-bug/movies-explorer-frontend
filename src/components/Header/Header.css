@@ -13,3 +13,17 @@
 .header_white {
   background-color: #ffffff;
 }
+
+@media (max-width: 900px) {
+  .header {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+@media (max-width: 450px) {
+  .header {
+    padding-right: 14px;
+    padding-left: 14px;
+  }
+}
