@@ -28,10 +28,10 @@ function Profile() {
         </label>
       </form>
       <div className="profile__submit-area">
-        <button className="profile__button">
+        <button className="profile__button-edit">
           Редактировать
         </button>
-        <button className="profile__button">
+        <button className="profile__button-exit">
           Выйти из аккаунта
         </button>
       </div>
