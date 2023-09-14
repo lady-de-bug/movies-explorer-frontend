@@ -21,7 +21,7 @@ function Register() {
           placeholder="Елена"
           required
         />
-        {/* <span className="form__error">ccc</span> */}
+        <span className="form__error"></span>
       </label>
 
       <label className="form__label">
@@ -33,7 +33,7 @@ function Register() {
           placeholder="usebudet@horosho.ru"
           required
         />
-        <span className="form__error">ccc</span>
+        <span className="form__error"></span>
       </label>
       <label className="form__label">
         Пароль

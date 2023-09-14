@@ -8,10 +8,11 @@
   padding-top: 246px;
   align-items: center;
   height: 100vh;
+  
 }
 
 .error-page__name {
-  margin: 0 0 3px;
+  margin: 0;
   font-weight: 400;
   font-size: 140px;
   line-height: 169.43px;
@@ -19,7 +20,7 @@
 }
 
 .error-page__description {
-  margin: 0 0 184px;
+  margin: 5px 0 184px;
   font-weight: 400;
   font-size: 16px;
   line-height: 19.36px;
@@ -40,22 +41,22 @@
   opacity: 0.4;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 900px) {
   .error-page {
     padding-top: 408px;
   }
 }
 
-@media (max-width: 410px) {
+@media (max-width: 450px) {
   .error-page {
     padding-top: 329px;
   }
   .error-page__name {
-    margin-bottom: 10px;
     font-size: 80px;
     line-height: 96.82px;
   }
   .error-page__description {
+    margin-top: 10px;
     margin-bottom: 284px;
     font-size: 12px;
     line-height: 14.52px;

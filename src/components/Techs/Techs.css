@@ -69,8 +69,6 @@
     letter-spacing: -0.48px;
   }
   .techs__tech-list {
-    display: grid;
-    grid-template-columns: repeat(2, 84px);
     padding-top: 83px;
   }
   .techs__tech-item {

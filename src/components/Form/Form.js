@@ -14,11 +14,13 @@ function Form({
 }) {
   return (
     <section className={`form form_type_${{ name }}`}>
-      <Logo />
+      <Logo className="form__logo"/>
       <h2 className="form__title">{title}</h2>
-      <form className="form__container">{children}</form>
+      <form className="form__container">
+        {children}
+        <button className="form__button" type='submit'>{buttonName}</button>
+      </form>
 
-      <button className="form__button">{buttonName}</button>
       <div className="form__choose-area">
         <p className="form__text">{questionText}</p>
         <Link className="form__link" to={link}>
