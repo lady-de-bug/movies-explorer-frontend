@@ -5,7 +5,7 @@ import './BurgerMenu.css';
 function BurgerMenu({ handleClose }) {
   const location = useLocation();
   return (
-    <div className="burger-menu__popup" /*onClick={handleClose}*/>
+    <div className="burger-menu" /*onClick={handleClose}*/>
       <div className="burger-menu__popup-container">
         <button
           className="burger-menu__popup-close-icon"
@@ -44,10 +44,8 @@ function BurgerMenu({ handleClose }) {
           </li>
         </ul>
 
-        <Link to="/profile" className="burger-menu__profile-link">
-          <button className="burger-menu__button" type="button">
-            Аккаунт
-          </button>
+        <Link to="/profile" className="burger-menu__button">
+          Аккаунт
         </Link>
       </div>
     </div>

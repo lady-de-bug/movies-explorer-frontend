@@ -49,6 +49,11 @@
   align-items: center;
   height: 36px;
   background-color: #2be080;
+}
+
+.about-project__back-duration-text {
+  margin: 0;
+  padding: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 16.94px;
@@ -61,6 +66,11 @@
   align-items: center;
   height: 36px;
   background-color: #f2f2f2;
+}
+
+.about-project__front-duration-text {
+  margin: 0;
+  padding: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 16.94px;
@@ -132,12 +142,16 @@
   }
   .about-project__back-duration {
     height: 35px;
+  }
+  .about-project__back-duration-text {
     font-size: 11px;
     line-height: 13.31px;
   }
 
   .about-project__front-duration {
     height: 35px;
+  }
+  .about-project__front-duration-text {
     font-size: 11px;
     line-height: 13.31px;
   }

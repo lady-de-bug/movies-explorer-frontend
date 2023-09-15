@@ -12,7 +12,7 @@
   object-position: center;
 }
 
-.movies-card__mask_group {
+.movies-card__mask-group {
   background: #fdfdfd;
   display: flex;
   justify-content: space-between;
@@ -48,7 +48,7 @@
   height: 16px;
   border: none;
   background-repeat: no-repeat;
-  background-color: none;
+  /* background-color: none; */
   background-position: center;
   cursor: pointer;
   border-radius: 100%;

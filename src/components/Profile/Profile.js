@@ -1,9 +1,14 @@
 import React from 'react';
 import './Profile.css';
+import { useNavigate } from 'react-router-dom';
 
 function Profile() {
+  const navigate = useNavigate();
+  const navigateHome = () => {
+    navigate('/');
+  };
   return (
-    <section className="profile">
+    <main className="profile">
       <h2 className="profile__title">Привет, Елена!</h2>
       <form className="profile__form">
         <label className="profile__label">
@@ -28,14 +33,15 @@ function Profile() {
         </label>
       </form>
       <div className="profile__submit-area">
-        <button className="profile__button-edit">
+        <button className="profile__button-edit" type="button">
           Редактировать
         </button>
-        <button className="profile__button-exit">
+
+        <button className="profile__button-exit" type="button" onClick={navigateHome}>
           Выйти из аккаунта
         </button>
       </div>
-    </section>
+    </main>
   );
 }
 

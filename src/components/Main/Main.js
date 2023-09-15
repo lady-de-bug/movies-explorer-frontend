@@ -9,14 +9,14 @@ import Footer from '../Footer/Footer';
 
 function Main() {
   return (
-    <section className="main">
+    <main className="main">
       <Promo />
       <NavTab />
       <AboutProject />
       <Techs />
       <AboutMe />
       <Footer />
-    </section>
+    </main>
   );
 }
 

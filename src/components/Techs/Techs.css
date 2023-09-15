@@ -7,6 +7,7 @@
 
 .techs__content {
   box-sizing: border-box;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -80,7 +81,14 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 767px) {
+  .techs__tech-list {
+    display: grid;
+    grid-template-columns: repeat(2, 84px);
+  }
+}
+
+@media (max-width: 767px) {
   .techs {
     padding: 70px 18px;
   }
@@ -101,8 +109,8 @@
   }
 
   .techs__tech-list {
-    display: grid;
-    grid-template-columns: repeat(2, 84px);
+    /* display: grid;
+    grid-template-columns: repeat(2, 84px); */
     padding-top: 50px;
   }
 }

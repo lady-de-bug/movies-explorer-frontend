@@ -6,14 +6,14 @@ import Footer from '../Footer/Footer';
 
 function SavedMovies() {
   return (
-    <section className="saved-movies">
+    <main className="saved-movies">
       <div className="saved-movies__container">
         <SearchForm />
         <MoviesCardList />
       </div>
 
       <Footer />
-    </section>
+    </main>
   );
 }
 

@@ -10,52 +10,53 @@ import Profile from '../Profile/Profile';
 import Register from '../Register/Register';
 import Login from '../Login/Login';
 
-
 function App() {
   const [isLoggedIn, setIsLoggedIn] = React.useState(true);
   return (
     <div className="page">
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <Header isLoggedIn={isLoggedIn} />
-              <Main />
-            </>
-          }
-        />
-        <Route
-          path="/movies"
-          element={
-            <>
-              <Header isLoggedIn={isLoggedIn} />
-              <Movies />
-            </>
-          }
-        />
-        <Route
-          path="/saved-movies"
-          element={
-            <>
-              <Header isLoggedIn={isLoggedIn} />
-              <SavedMovies />
-            </>
-          }
-        />
-        <Route
-          path="/profile"
-          element={
-            <>
-              <Header isLoggedIn={isLoggedIn} />
-              <Profile />
-            </>
-          }
-        />
-        <Route path="/signup" element={<Register />} />
-        <Route path="/signin" element={<Login />} />
-        <Route path="/*" element={<PageNotFound />} />
-              </Routes>
+      <div className="page__content">
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Header isLoggedIn={isLoggedIn} />
+                <Main />
+              </>
+            }
+          />
+          <Route
+            path="/movies"
+            element={
+              <>
+                <Header isLoggedIn={isLoggedIn} />
+                <Movies />
+              </>
+            }
+          />
+          <Route
+            path="/saved-movies"
+            element={
+              <>
+                <Header isLoggedIn={isLoggedIn} />
+                <SavedMovies />
+              </>
+            }
+          />
+          <Route
+            path="/profile"
+            element={
+              <>
+                <Header isLoggedIn={isLoggedIn} />
+                <Profile />
+              </>
+            }
+          />
+          <Route path="/signup" element={<Register />} />
+          <Route path="/signin" element={<Login />} />
+          <Route path="/*" element={<PageNotFound />} />
+        </Routes>
+      </div>
     </div>
   );
 }

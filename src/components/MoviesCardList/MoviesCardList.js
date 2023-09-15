@@ -4,11 +4,12 @@ import MoviesCard from '../MoviesCard/MoviesCard';
 function MoviesCardList() {
   return (
     <>
-      <section className="movies-list">
-        <MoviesCard />
-        <MoviesCard />
-        <MoviesCard />
-        {/* <MoviesCard />
+      <section className="movies">
+        <ul className="movies__list">
+          <MoviesCard />
+          <MoviesCard />
+          <MoviesCard />
+          {/* <MoviesCard />
         <MoviesCard />
         <MoviesCard />
         <MoviesCard />
@@ -21,6 +22,7 @@ function MoviesCardList() {
         <MoviesCard />
         <MoviesCard />
         <MoviesCard /> */}
+        </ul>
       </section>
     </>
   );

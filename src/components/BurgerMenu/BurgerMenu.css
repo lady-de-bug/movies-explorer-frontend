@@ -1,4 +1,4 @@
-.burger-menu__popup {
+.burger-menu {
   position: fixed;
   justify-content: flex-end;
   align-items: center;
@@ -83,15 +83,16 @@
 }
 
 .burger-menu__button {
-  width: 100px;
-  height: 32px;
+  /* width: 100px;
+  height: 32px; */
+  text-decoration: none;
+  color: #000000;
   border-radius: 20px;
-  border: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   text-align: center;
-  padding: 0;
+  padding: 8px 20px;
   background-color: #f9f9f9;
   cursor: pointer;
   transition: opacity 0.3s linear 0.2s;
@@ -113,7 +114,6 @@
     padding-bottom: 7px;
   }
   .burger-menu__popup-close-icon {
-    
     top: 14px;
     right: 14px;
     width: 32px;

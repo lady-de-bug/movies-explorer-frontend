@@ -5,7 +5,7 @@ import SectionTitle from '../SectionTitle/SectionTitle';
 function AboutProject() {
   return (
     <section className="about-project" id="about-project">
-      <SectionTitle title="О проекте"/>
+      <SectionTitle title="О проекте" />
       {/* <h2 className="about-project__title section-title">О проекте</h2> */}
       <div className="about-project__content">
         <div className="about-project__content-block">
@@ -28,8 +28,12 @@ function AboutProject() {
         </div>
       </div>
       <div className="about-project__timetable">
-        <div className="about-project__back-duration">1 неделя</div>
-        <div className="about-project__front-duration">4 недели</div>
+        <div className="about-project__back-duration">
+          <p className="about-project__back-duration-text">1 неделя</p>
+        </div>
+        <div className="about-project__front-duration">
+          <p className="about-project__front-duration-text">4 недели</p>
+        </div>
         <p className="about-project__text">Back-end</p>
         <p className="about-project__text">Front-end</p>
       </div>

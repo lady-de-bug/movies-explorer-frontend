@@ -49,9 +49,7 @@ function Navigation({ isLoggedIn }) {
             </li>
           </ul>
           <Link to="/profile" className="navigation__profile-link">
-            <button className="navigation__button" type="button">
-              Аккаунт
-            </button>
+            Аккаунт
           </Link>
           <button
             className={
@@ -61,14 +59,12 @@ function Navigation({ isLoggedIn }) {
             }
             type="button"
             onClick={handleOpen}
-          >
-           
-          </button>
-        
+          ></button>
+
           {isBurgerOpened && <BurgerMenu handleClose={handleClose} />}
         </>
       ) : (
-        <nav nav className="navigation__auth-list">
+        <ul nav className="navigation__auth-list">
           <li className="navigation__auth-link">
             <Link to="/signup">
               <button className="navigation__signup-button" type="button">
@@ -83,7 +79,7 @@ function Navigation({ isLoggedIn }) {
               </button>
             </Link>
           </li>
-        </nav>
+        </ul>
       )}
     </nav>
   );

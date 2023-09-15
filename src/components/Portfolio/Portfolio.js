@@ -10,20 +10,22 @@ function Portfolio() {
           <li className="portfolio__site-link">
             <a
               className="portfolio__site-name"
-              href="https://github.com/lady-de-bug/how-to-learn#readme-ov-file"
+              href="https://lady-de-bug.github.io/how-to-learn/"
               target="_blank"
               rel="noreferrer"
             >
               Статичный сайт
+              <span>↗</span>
             </a>
-            <a
+
+            {/* <a
               className="portfolio__arrow-link"
               href="https://github.com/lady-de-bug/react-mesto-api-full-gha"
               target="_blank"
               rel="noreferrer"
             >
               ↗
-            </a>
+            </a> */}
           </li>
           <li className="portfolio__site-link">
             <a
@@ -33,15 +35,17 @@ function Portfolio() {
               rel="noreferrer"
             >
               Адаптивный сайт
+              <span>↗</span>
             </a>
-            <a
+
+            {/* <a
               className="portfolio__arrow-link"
               href="https://github.com/lady-de-bug/react-mesto-api-full-gha"
               target="_blank"
               rel="noreferrer"
             >
               ↗
-            </a>
+            </a> */}
           </li>
           <li className="portfolio__site-link">
             <a
@@ -51,15 +55,17 @@ function Portfolio() {
               rel="noreferrer"
             >
               Одностраничное приложение
+              <span>↗</span>
             </a>
-            <a
+
+            {/* <a
               className="portfolio__arrow-link"
               href="https://github.com/lady-de-bug/react-mesto-api-full-gha"
               target="_blank"
               rel="noreferrer"
             >
               ↗
-            </a>
+            </a> */}
           </li>
         </ul>
       </nav>

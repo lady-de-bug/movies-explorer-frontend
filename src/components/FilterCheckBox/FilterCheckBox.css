@@ -14,7 +14,12 @@
   display: inline-block;
   width: 36px;
   height: 20px;
-  /* background-color: aquamarine; */
+
+  transition: opacity 0.3s linear 0.2s;
+}
+
+.filter-checkbox__switch:hover {
+  opacity: 0.8;
 }
 
 .filter-checkbox__invisible {
@@ -76,7 +81,6 @@
     font-size: 11px;
   }
   .filter-checkbox {
-     
     padding-bottom: 48px;
   }
 }
