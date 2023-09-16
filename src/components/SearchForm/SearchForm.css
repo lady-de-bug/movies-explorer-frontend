@@ -14,11 +14,12 @@
   background-color: #f9f9f9;
   border-radius: 40px;
   position: relative;
+  overflow: hidden;
 }
 
-form:focus-within {
+/* form:focus-within {
   outline: 1px solid #ff6838;
-}
+} */
 
 .search-form__input {
   font-size: 13px;
@@ -30,6 +31,12 @@ form:focus-within {
   outline: none;
   border: none;
   align-items: center;
+  
+}
+
+.search-form__input:focus {
+ 
+  background-color: rgba(43, 224, 128, 0.3);
 }
 
 .search-form__button {

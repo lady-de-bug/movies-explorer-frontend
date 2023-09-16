@@ -9,7 +9,11 @@ function MoviesCard() {
   return (
     <>
       <article className="movies-card">
-        <img className="movies-card__image" src={movie} alt="Фильм" />
+        <img
+          className="movies-card__image"
+          src={movie}
+          alt="Изображение фильма"
+        />
         <div className="movies-card__mask-group">
           <div className="movies-card__caption">
             <h2 className="movies-card__name">33 слова о дизайне</h2>
@@ -26,8 +30,13 @@ function MoviesCard() {
           ></button>
         </div>
       </article>
+
       <article className="movies-card">
-        <img className="movies-card__image" src={movie} alt="Фильм" />
+        <img
+          className="movies-card__image"
+          src={movie}
+          alt="Изображение фильма"
+        />
         <div className="movies-card__mask-group">
           <div className="movies-card__caption">
             <h2 className="movies-card__name">33 слова о дизайне</h2>

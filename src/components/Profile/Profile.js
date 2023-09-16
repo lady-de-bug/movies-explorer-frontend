@@ -9,7 +9,7 @@ function Profile() {
   };
   return (
     <main className="profile">
-      <h2 className="profile__title">Привет, Елена!</h2>
+      <h1 className="profile__title">Привет, Елена!</h1>
       <form className="profile__form">
         <label className="profile__label">
           Имя

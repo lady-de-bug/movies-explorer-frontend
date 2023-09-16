@@ -50,6 +50,10 @@
   outline-style: none;
 }
 
+.form__input:focus {
+  background-color: rgba(43, 224, 128, 0.3);
+}
+
 .form__input_error {
   color: #ee3465;
 }

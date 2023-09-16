@@ -15,7 +15,7 @@ function Form({
   return (
     <section className={`form form_type_${name}`}>
       <Logo className="form__logo" />
-      <h2 className="form__title">{title}</h2>
+      <h1 className="form__title">{title}</h1>
       <form className="form__container">
         {children}
         <button className="form__button" type="submit">

@@ -8,7 +8,7 @@ import Footer from '../Footer/Footer';
 
 function Movies() {
   return (
-    <main className="movies">
+    <main className="movies-main">
       <SearchForm />
       <MoviesCardList />
       <ShowMore />

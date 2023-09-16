@@ -10,6 +10,8 @@
   height: 151px;
   object-fit: cover;
   object-position: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .movies-card__mask-group {
